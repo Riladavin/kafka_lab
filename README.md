@@ -1,10 +1,10 @@
 # Image Captioning repo
 
-## Prepare model
+## Init repo
 
 ```bash
-source ./venv/bin/activate
-python train_model.py
+chmod +x ./init.sh
+./init.sh
 ```
 The best checkpoint will be in `data/checkpoints/best` folder.
 
@@ -41,3 +41,5 @@ export PYTHONPATH=${PYTHONPATH}:.
 docker compose up -d
 python -m streamlit run src/visualize.py
 ```
+![img.png](img.png)
+![img_1.png](img_1.png)
